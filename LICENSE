@@ -1,651 +1,674 @@
-<!--#include virtual="/server/header.html" -->
-<!-- Parent-Version: 1.86 -->
-<title>What is free software?
-- GNU Project - Free Software Foundation</title>
-<style type="text/css" media="print,screen"><!--
-.note { margin-left: 6%; margin-right: 6%; }
-@media (min-width: 48em) {
-   .note { margin-top: .8em; }
-}
---></style>
-<meta http-equiv="Keywords" content="GNU, FSF, Free Software Foundation, Linux, Emacs, GCC, Unix, Free Software, Operating System, GNU Kernel, HURD, GNU HURD, Hurd" />
-<meta http-equiv="Description" content="Since 1983, developing the free Unix style operating system GNU, so that computer users can have the freedom to share and improve the software they use." />
-
-<!--#include virtual="/philosophy/po/free-sw.translist" -->
-<!--#include virtual="/server/banner.html" -->
-
-<h2>What is free software?</h2>
-
-<div class="article">
-<h3>The Free Software Definition</h3>
-
-<blockquote class="note" id="fsf-licensing"><p style="font-size: 80%">
-Have a question about free software licensing not answered here?
-See our other <a href="http://www.fsf.org/licensing">licensing resources</a>,
-and if necessary contact the FSF Compliance Lab
-at <a href="mailto:licensing@fsf.org">licensing@fsf.org</a>.</p>
-</blockquote>
-
-<div class="comment">
-<p>
-The free software definition presents the criteria for whether a
-particular software program qualifies as free software.  From time to
-time we revise this definition, to clarify it or to resolve questions
-about subtle issues.  See the <a href="#History">History section</a>
-below for a list of changes that affect the definition of free
-software.
-</p>
-
-<p>
-&ldquo;Open source&rdquo; is something different: it has a very
-different philosophy based on different values.  Its practical
-definition is different too, but nearly all open source programs are
-in fact free.  We explain the
-difference in <a href="/philosophy/open-source-misses-the-point.html">
-Why &ldquo;Open Source&rdquo; misses the point of Free Software</a>.
-</p>
-</div>
-
-<p>
-&ldquo;Free software&rdquo; means software that respects users'
-freedom and community.  Roughly, it means that <b>the users have the
-freedom to run, copy, distribute, study, change and improve the
-software</b>.  Thus, &ldquo;free software&rdquo; is a matter of
-liberty, not price.  To understand the concept, you should think of
-&ldquo;free&rdquo; as in &ldquo;free speech,&rdquo; not as in
-&ldquo;free beer&rdquo;.  We sometimes call it &ldquo;libre
-software,&rdquo; borrowing the French or Spanish word for
-&ldquo;free&rdquo; as in freedom, to show we do not mean the software
-is gratis.
-</p>
-
-<p>
-We campaign for these freedoms because everyone deserves them.  With
-these freedoms, the users (both individually and collectively) control
-the program and what it does for them.  When users don't control the
-program, we call it a &ldquo;nonfree&rdquo; or
-&ldquo;proprietary&rdquo; program.  The nonfree program controls the
-users, and the developer controls the program; this makes the
-program <a href="/philosophy/free-software-even-more-important.html">
-an instrument of unjust power</a>.
-</p>
-
-<h4> The four essential freedoms</h4>
-
-<p>
-A program is free software if the program's users have the
-four essential freedoms: <a href="#f1">[1]</a>
-</p>
-
-<ul class="important">
-  <li>The freedom to run the program as you wish,
-      for any purpose (freedom 0).</li>
-  <li>The freedom to study how the program works, and change it so it
-      does your computing as you wish (freedom 1). Access to the source
-      code is a precondition for this.
-  </li>
-  <li>The freedom to redistribute copies so you can help others
-      (freedom 2).
-  </li>
-  <li>The freedom to distribute copies of your modified versions
-      to others (freedom 3).  By doing this you can give the whole
-      community a chance to benefit from your changes.
-      Access to the source code is a precondition for this.
-  </li>
-</ul>
-
-<p>
-A program is free software if it gives users adequately all of these
-freedoms.  Otherwise, it is nonfree.  While we can distinguish various
-nonfree distribution schemes in terms of how far they fall short of
-being free, we consider them all equally unethical.</p>
-
-<p>In any given scenario, these freedoms must apply to whatever code
-we plan to make use of, or lead others to make use of.  For instance,
-consider a program A which automatically launches a program B to
-handle some cases.  If we plan to distribute A as it stands, that
-implies users will need B, so we need to judge whether both A and B
-are free.  However, if we plan to modify A so that it doesn't use B,
-only A needs to be free; B is not pertinent to that plan.</p>
-
-<p>
-&ldquo;Free software&rdquo; does not mean &ldquo;noncommercial&rdquo;.  A free
-program must be available for commercial use, commercial development,
-and commercial distribution.  Commercial development of free software
-is no longer unusual; such free commercial software is very important.
-You may have paid money to get copies of free software, or you may have
-obtained copies at no charge.  But regardless of how you got your copies,
-you always have the freedom to copy and change the software, even to 
-<a href="/philosophy/selling.html">sell copies</a>.
-</p>
-
-<p>
-A free program must offer the four freedoms to any user that obtains a
-copy of the software, provided the user has complied thus far with the
-conditions of the free license covering the software.  Putting some of
-the freedoms off limits to some users, or requiring that users pay, in
-money or in kind, to exercise them, is tantamount to not granting the
-freedoms in question, and thus renders the program nonfree.
-</p>
-
-<p>The rest of this page clarifies certain points about what makes
-specific freedoms adequate or not.</p>
-
-<h4>The freedom to run the program as you wish</h4>
-
-<p>
-The freedom to run the program means the freedom for any kind of person
-or organization to use it on any kind of computer system, for any kind of
-overall job and purpose, without being required to communicate about it
-with the developer or any other specific entity.  In this freedom, it is
-the <em>user's</em> purpose that matters, not the <em>developer's</em>
-purpose; you as a user are free to run the program for your purposes,
-and if you distribute it to someone else, she is then free to run it
-for her purposes, but you are not entitled to impose your purposes on her.
-</p>
-
-<p>
-The freedom to run the program as you wish means that you are not
-forbidden or stopped from making it run.  This has nothing to do with what
-functionality the program has, whether it is technically capable of
-functioning in any given environment, or whether it is useful for any
-particular computing activity.</p>
-
-<h4>The freedom to study the source code and make changes</h4>
-
-<p>
-In order for freedoms 1 and 3 (the freedom to make changes and the
-freedom to publish the changed versions) to be meaningful, you must have
-access to the source code of the program.  Therefore, accessibility of
-source code is a necessary condition for free software.  Obfuscated
-&ldquo;source code&rdquo; is not real source code and does not count
-as source code.
-</p>
-
-<p>
-Freedom 1 includes the freedom to use your changed version in place of
-the original.  If the program is delivered in a product designed to
-run someone else's modified versions but refuse to run yours &mdash; a
-practice known as &ldquo;tivoization&rdquo; or &ldquo;lockdown&rdquo;,
-or (in its practitioners' perverse terminology) as &ldquo;secure
-boot&rdquo; &mdash; freedom 1 becomes an empty pretense rather than a
-practical reality.  These binaries are not free
-software even if the source code they are compiled from is free.
-</p>
-
-<p>
-One important way to modify a program is by merging in available free
-subroutines and modules.  If the program's license says that you
-cannot merge in a suitably licensed existing module &mdash; for instance, if it
-requires you to be the copyright holder of any code you add &mdash; then the
-license is too restrictive to qualify as free.
-</p>
-
-<p>
-Whether a change constitutes an improvement is a subjective matter.
-If your right to modify a program is limited, in substance, to changes that
-someone else considers an improvement, that program is not free.
-</p>
-
-<h4>The freedom to redistribute if you wish: basic requirements</h4>
-
-<p>Freedom to distribute (freedoms 2 and 3) means you are free to
-redistribute copies, either with or without modifications, either
-gratis or charging a fee for distribution, to
-<a href="#exportcontrol">anyone anywhere</a>.  Being free to do these
-things means (among other things) that you do not have to ask or pay
-for permission to do so.
-</p>
-
-<p>
-You should also have the freedom to make modifications and use them
-privately in your own work or play, without even mentioning that they
-exist.  If you do publish your changes, you should not be required to
-notify anyone in particular, or in any particular way.
-</p>
-
-<p>
-Freedom 3 includes the freedom to release your modified versions
-as free software.  A free license may also permit other ways of
-releasing them; in other words, it does not have to be
-a <a href="/copyleft/copyleft.html">copyleft</a> license.  However, a
-license that requires modified versions to be nonfree does not qualify
-as a free license.
-</p>
-
-<p>
-The freedom to redistribute copies must include binary or executable
-forms of the program, as well as source code, for both modified and
-unmodified versions.  (Distributing programs in runnable form is necessary
-for conveniently installable free operating systems.)  It is OK if there
-is no way to produce a binary or executable form for a certain program
-(since some languages don't support that feature), but you must have the
-freedom to redistribute such forms should you find or develop a way to
-make them.
-</p>
-
-<h4>Copyleft</h4>
-
-<p>
-Certain kinds of rules about the manner of distributing free
-software are acceptable, when they don't conflict with the central
-freedoms.  For example, <a href="/copyleft/copyleft.html">copyleft</a>
-(very simply stated) is the rule that when redistributing the program,
-you cannot add restrictions to deny other people the central freedoms.
-This rule does not conflict with the central freedoms; rather it
-protects them.
-</p>
-
-<p>
-In the GNU project, we use copyleft to protect the four freedoms
-legally for everyone.  We believe there are important reasons why
-<a href="/philosophy/pragmatic.html">it is better to use
-copyleft</a>.  However,
-<a href="/philosophy/categories.html#Non-CopyleftedFreeSoftware">
-noncopylefted free software</a> is ethical
-too.  See <a href="/philosophy/categories.html">Categories of Free
-Software</a> for a description of how &ldquo;free software,&rdquo;
-&ldquo;copylefted software&rdquo; and other categories of software
-relate to each other.
-</p>
-
-<h4>Rules about packaging and distribution details</h4>
-
-<p>
-Rules about how to package a modified version are acceptable,
-if they don't substantively limit your freedom to release modified
-versions, or your freedom to make and use modified versions privately.
-Thus, it is acceptable for the license to require that you change the
-name of the modified version, remove a logo, or identify your
-modifications as yours.  As long as these requirements are not so
-burdensome that they effectively hamper you from releasing your
-changes, they are acceptable; you're already making other changes to
-the program, so you won't have trouble making a few more.
-</p>
-
-<p>
-Rules that &ldquo;if you make your version available in this way, you
-must make it available in that way also&rdquo; can be acceptable too,
-on the same condition.  An example of such an acceptable rule is one
-saying that if you have distributed a
-modified version and a previous developer asks for a copy of it, you
-must send one.  (Note that such a rule still leaves you the choice of
-whether to distribute your version at all.)  Rules that require release
-of source code to the users for versions that you put into public use
-are also acceptable.
-</p>
-
-<p>
-A special issue arises when a license requires changing the name by
-which the program will be invoked from other programs.  That
-effectively hampers you from releasing your changed version so that it
-can replace the original when invoked by those other programs.  This
-sort of requirement is acceptable only if there's a suitable aliasing
-facility that allows you to specify the original program's name as an
-alias for the modified version.</p>
-
-<h4>Export regulations</h4>
-
-<p>
-Sometimes government <a id="exportcontrol">export control regulations</a>
-and trade sanctions can constrain your freedom to distribute copies of
-programs internationally.  Software developers do not have the power to
-eliminate or override these restrictions, but what they can and must do
-is refuse to impose them as conditions of use of the program.  In this
-way, the restrictions will not affect activities and people outside the
-jurisdictions of these governments.  Thus, free software licenses
-must not require obedience to any nontrivial export regulations as a
-condition of exercising any of the essential freedoms.
-</p>
-
-<p>
-Merely mentioning the existence of export regulations, without making
-them a condition of the license itself, is acceptable since it does
-not restrict users.  If an export regulation is actually trivial for
-free software, then requiring it as a condition is not an actual
-problem; however, it is a potential problem, since a later change in
-export law could make the requirement nontrivial and thus render the
-software nonfree.
-</p>
-
-<h4>Legal considerations</h4>
-
-<p>
-In order for these freedoms to be real, they must be permanent and
-irrevocable as long as you do nothing wrong; if the developer of the
-software has the power to revoke the license, or retroactively add
-restrictions to its terms, without your doing anything wrong to give
-cause, the software is not free.
-</p>
-
-<p>
-A free license may not require compliance with the license of a
-nonfree program.  Thus, for instance, if a license requires you to
-comply with the licenses of &ldquo;all the programs you use&rdquo;, in
-the case of a user that runs nonfree programs this would require
-compliance with the licenses of those nonfree programs; that makes the
-license nonfree.
-</p>
-
-<p>
-It is acceptable for a free license to specify which jurisdiction's
-law applies, or where litigation must be done, or both.
-</p>
-
-<h4>Contract-based licenses</h4>
-
-<p>
-Most free software licenses are based on copyright, and there are limits
-on what kinds of requirements can be imposed through copyright.  If a
-copyright-based license respects freedom in the ways described above, it
-is unlikely to have some other sort of problem that we never anticipated
-(though this does happen occasionally).  However, some free software
-licenses are based on contracts, and contracts can impose a much larger
-range of possible restrictions.  That means there are many possible ways
-such a license could be unacceptably restrictive and nonfree.
-</p>
-
-<p>
-We can't possibly list all the ways that might happen.  If a
-contract-based license restricts the user in an unusual way that
-copyright-based licenses cannot, and which isn't mentioned here as
-legitimate, we will have to think about it, and we will probably conclude
-it is nonfree.
-</p>
-
-<h4>Use the right words when talking about free software</h4>
-
-<p>
-When talking about free software, it is best to avoid using terms
-like &ldquo;give away&rdquo; or &ldquo;for free,&rdquo; because those terms imply that
-the issue is about price, not freedom.  Some common terms such
-as &ldquo;piracy&rdquo; embody opinions we hope you won't endorse.  See 
-<a href="/philosophy/words-to-avoid.html">Confusing Words and Phrases that
-are Worth Avoiding</a> for a discussion of these terms.  We also have
-a list of proper <a href="/philosophy/fs-translations.html">translations of
-&ldquo;free software&rdquo;</a> into various languages.
-</p>
-
-<h4>How we interpret these criteria</h4>
-
-<p>
-Finally, note that criteria such as those stated in this free software
-definition require careful thought for their interpretation.  To decide
-whether a specific software license qualifies as a free software license,
-we judge it based on these criteria to determine whether it fits their
-spirit as well as the precise words.  If a license includes unconscionable
-restrictions, we reject it, even if we did not anticipate the issue
-in these criteria.  Sometimes a license requirement raises an issue
-that calls for extensive thought, including discussions with a lawyer,
-before we can decide if the requirement is acceptable.  When we reach
-a conclusion about a new issue, we often update these criteria to make
-it easier to see why certain licenses do or don't qualify.
-</p>
-
-<h4>Get help with free licenses</h4>
-
-<p>
-If you are interested in whether a specific license qualifies as a free
-software license, see our <a href="/licenses/license-list.html">list
-of licenses</a>.  If the license you are concerned with is not
-listed there, you can ask us about it by sending us email at 
-<a href="mailto:licensing@gnu.org">&lt;licensing@gnu.org&gt;</a>.
-</p> 
-
-<p>
-If you are contemplating writing a new license, please contact the
-Free Software Foundation first by writing to that address. The
-proliferation of different free software licenses means increased work
-for users in understanding the licenses; we may be able to help you
-find an existing free software license that meets your needs.
-</p>
-
-<p>
-If that isn't possible, if you really need a new license, with our
-help you can ensure that the license really is a free software license
-and avoid various practical problems.
-</p>
-
-<h3 id="beyond-software">Beyond Software</h3>
-
-<p>
-<a href="/philosophy/free-doc.html">Software manuals must be free</a>,
-for the same reasons that software must be free, and because the
-manuals are in effect part of the software.
-</p>
-
-<p>
-The same arguments also make sense for other kinds of works of
-practical use &mdash; that is to say, works that embody useful knowledge,
-such as educational works and reference
-works.  <a href="http://wikipedia.org">Wikipedia</a> is the best-known
-example.
-</p>
-
-<p>
-Any kind of work <em>can</em> be free, and the definition of free software
-has been extended to a definition of <a href="http://freedomdefined.org/">
-free cultural works</a> applicable to any kind of works.
-</p>
-
-<h3 id="open-source">Open Source?</h3>
-
-<p>
-Another group uses the term &ldquo;open source&rdquo; to mean
-something close (but not identical) to &ldquo;free software&rdquo;.  We
-prefer the term &ldquo;free software&rdquo; because, once you have heard that
-it refers to freedom rather than price, it calls to mind freedom.  The
-word &ldquo;open&rdquo; <a href="/philosophy/open-source-misses-the-point.html">
-never refers to freedom</a>.
-</p>
-</div>
-
-<h3 id="History">History</h3>
-
-<p>From time to time we revise this Free Software Definition.  Here is
-the list of substantive changes, along with links to show exactly what
-was changed.</p>
-
-<ul>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.162&amp;r2=1.163">Version
-1.163</a>: Clarify that the four freedoms apply to any and all users,
-and that requiring users to pay to exercise some of these freedoms is
-a way of denying them.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.152&amp;r2=1.153">Version
-1.153</a>: Clarify that freedom to run the program means nothing stops
-you from making it run.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.140&amp;r2=1.141">Version
-1.141</a>: Clarify which code needs to be free.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.134&amp;r2=1.135">Version
-1.135</a>: Say each time that freedom 0 is the freedom to run the program
-as you wish.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.133&amp;r2=1.134">Version
-1.134</a>: Freedom 0 is not a matter of the program's functionality.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.130&amp;r2=1.131">Version
-1.131</a>: A free license may not require compliance with a nonfree license
-of another program.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.128&amp;r2=1.129">Version
-1.129</a>: State explicitly that choice of law and choice of forum
-specifications are allowed.  (This was always our policy.)</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.121&amp;r2=1.122">Version
-1.122</a>: An export control requirement is a real problem if the
-requirement is nontrivial; otherwise it is only a potential problem.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.117&amp;r2=1.118">Version
-1.118</a>: Clarification: the issue is limits on your right to modify,
-not on what modifications you have made.  And modifications are not limited
-to &ldquo;improvements&rdquo;</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.110&amp;r2=1.111">Version
-1.111</a>: Clarify 1.77 by saying that only
-retroactive <em>restrictions</em> are unacceptable.  The copyright
-holders can always grant additional <em>permission</em> for use of the
-work by releasing the work in another way in parallel.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.104&amp;r2=1.105">Version
-1.105</a>: Reflect, in the brief statement of freedom 1, the point
-(already stated in version 1.80) that it includes really using your modified
-version for your computing.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.91&amp;r2=1.92">Version
-1.92</a>: Clarify that obfuscated code does not qualify as source code.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.89&amp;r2=1.90">Version
-1.90</a>: Clarify that freedom 3 means the right to distribute copies
-of your own modified or improved version, not a right to participate
-in someone else's development project.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.88&amp;r2=1.89">Version
-1.89</a>: Freedom 3 includes the right to release modified versions as
-free software.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.79&amp;r2=1.80">Version
-1.80</a>: Freedom 1 must be practical, not just theoretical;
-i.e., no tivoization.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.76&amp;r2=1.77">Version
-1.77</a>: Clarify that all retroactive changes to the license are
-unacceptable, even if it's not described as a complete
-replacement.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.73&amp;r2=1.74">Version
-1.74</a>: Four clarifications of points not explicit enough, or stated
-in some places but not reflected everywhere:
-<ul>
-<li>"Improvements" does not mean the license can
-substantively limit what kinds of modified versions you can release.
-Freedom 3 includes distributing modified versions, not just changes.</li>
-<li>The right to merge in existing modules
-refers to those that are suitably licensed.</li>
-<li>Explicitly state the conclusion of the point about export controls.</li>
-<li>Imposing a license change constitutes revoking the old license.</li>
-</ul>
-</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.56&amp;r2=1.57">Version
-1.57</a>: Add &quot;Beyond Software&quot; section.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.45&amp;r2=1.46">Version
-1.46</a>: Clarify whose purpose is significant in the freedom to run
-the program for any purpose.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.40&amp;r2=1.41">Version
-1.41</a>: Clarify wording about contract-based licenses.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.39&amp;r2=1.40">Version
-1.40</a>: Explain that a free license must allow to you use other
-available free software to create your modifications.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.38&amp;r2=1.39">Version
-1.39</a>: Note that it is acceptable for a license to require you to
-provide source for versions of the software you put into public
-use.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.30&amp;r2=1.31">Version
-1.31</a>: Note that it is acceptable for a license to require you to
-identify yourself as the author of modifications.  Other minor
-clarifications throughout the text.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.22&amp;r2=1.23">Version
-1.23</a>: Address potential problems related to contract-based
-licenses.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.15&amp;r2=1.16">Version
-1.16</a>: Explain why distribution of binaries is important.</li>
-
-<li><a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;r1=1.10&amp;r2=1.11">Version
-1.11</a>: Note that a free license may require you to send a copy of
-versions you distribute to previous developers on request.</li>
-
-</ul>
-
-<p>There are gaps in the version numbers shown above because there are
-other changes in this page that do not affect the definition or its
-interpretations.  For instance, the list does not include changes in
-asides, formatting, spelling, punctuation, or other parts of the page.
-You can review the complete list of changes to the page through
-the <a href="http://web.cvs.savannah.gnu.org/viewvc/www/philosophy/free-sw.html?root=www&amp;view=log">cvsweb
-interface</a>.</p>
-
-<h3 style="font-size:1em">Footnote</h3>
-<ol>
-<li id="f1">The reason they are numbered 0, 1, 2 and 3 is historical. Around
-1990 there were three freedoms, numbered 1, 2 and 3. Then we realized that
-the freedom to run the program needed to be mentioned explicitly.
-It was clearly more basic than the other three, so it properly should
-precede them. Rather than renumber the others, we made it freedom&nbsp;0.</li>
-</ol>
-
-</div><!-- for id="content", starts in the include above -->
-<!--#include virtual="/server/footer.html" -->
-<div id="footer">
-<div class="unprintable">
-
-<p>Please send general FSF &amp; GNU inquiries to
-<a href="mailto:gnu@gnu.org">&lt;gnu@gnu.org&gt;</a>.
-There are also <a href="/contact/">other ways to contact</a>
-the FSF.  Broken links and other corrections or suggestions can be sent
-to <a href="mailto:webmasters@gnu.org">&lt;webmasters@gnu.org&gt;</a>.</p>
-
-<p><!-- TRANSLATORS: Ignore the original text in this paragraph,
-        replace it with the translation of these two:
-
-        We work hard and do our best to provide accurate, good quality
-        translations.  However, we are not exempt from imperfection.
-        Please send your comments and general suggestions in this regard
-        to <a href="mailto:web-translators@gnu.org">
-        &lt;web-translators@gnu.org&gt;</a>.</p>
-
-        <p>For information on coordinating and submitting translations of
-        our web pages, see <a
-        href="/server/standards/README.translations.html">Translations
-        README</a>. -->
-Please see the <a
-href="/server/standards/README.translations.html">Translations
-README</a> for information on coordinating and submitting translations
-of this article.</p>
-</div>
-
-<!-- Regarding copyright, in general, standalone pages (as opposed to
-     files generated as part of manuals) on the GNU web server should
-     be under CC BY-ND 4.0.  Please do NOT change or remove this
-     without talking with the webmasters or licensing team first.
-     Please make sure the copyright date is consistent with the
-     document.  For web pages, it is ok to list just the latest year the
-     document was modified, or published.
-     
-     If you wish to list earlier years, that is ok too.
-     Either "2001, 2002, 2003" or "2001-2003" are ok for specifying
-     years, as long as each year in the range is in fact a copyrightable
-     year, i.e., a year in which the document was published (including
-     being publicly visible on the web or in a revision control system).
-     
-     There is more detail about copyright years in the GNU Maintainers
-     Information document, www.gnu.org/prep/maintain. -->
-
-<p>Copyright &copy; 1996, 2002, 2004-2007, 2009-2019
-Free Software Foundation, Inc.</p>
-
-<p>This page is licensed under a <a rel="license"
-href="http://creativecommons.org/licenses/by-nd/4.0/">Creative
-Commons Attribution-NoDerivatives 4.0 International License</a>.</p>
-
-<!--#include virtual="/server/bottom-notes.html" -->
-
-<p class="unprintable">Updated:
-<!-- timestamp start -->
-$Date: 2019/03/20 10:56:16 $
-<!-- timestamp end -->
-</p>
-</div>
-</div><!-- for class="inner", starts in the banner include -->
-</body>
-</html>
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+                            Preamble
+
+  The GNU General Public License is a free, copyleft license for
+software and other kinds of works.
+
+  The licenses for most software and other practical works are designed
+to take away your freedom to share and change the works.  By contrast,
+the GNU General Public License is intended to guarantee your freedom to
+share and change all versions of a program--to make sure it remains free
+software for all its users.  We, the Free Software Foundation, use the
+GNU General Public License for most of our software; it applies also to
+any other work released this way by its authors.  You can apply it to
+your programs, too.
+
+  When we speak of free software, we are referring to freedom, not
+price.  Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+them if you wish), that you receive source code or can get it if you
+want it, that you can change the software or use pieces of it in new
+free programs, and that you know you can do these things.
+
+  To protect your rights, we need to prevent others from denying you
+these rights or asking you to surrender the rights.  Therefore, you have
+certain responsibilities if you distribute copies of the software, or if
+you modify it: responsibilities to respect the freedom of others.
+
+  For example, if you distribute copies of such a program, whether
+gratis or for a fee, you must pass on to the recipients the same
+freedoms that you received.  You must make sure that they, too, receive
+or can get the source code.  And you must show them these terms so they
+know their rights.
+
+  Developers that use the GNU GPL protect your rights with two steps:
+(1) assert copyright on the software, and (2) offer you this License
+giving you legal permission to copy, distribute and/or modify it.
+
+  For the developers' and authors' protection, the GPL clearly explains
+that there is no warranty for this free software.  For both users' and
+authors' sake, the GPL requires that modified versions be marked as
+changed, so that their problems will not be attributed erroneously to
+authors of previous versions.
+
+  Some devices are designed to deny users access to install or run
+modified versions of the software inside them, although the manufacturer
+can do so.  This is fundamentally incompatible with the aim of
+protecting users' freedom to change the software.  The systematic
+pattern of such abuse occurs in the area of products for individuals to
+use, which is precisely where it is most unacceptable.  Therefore, we
+have designed this version of the GPL to prohibit the practice for those
+products.  If such problems arise substantially in other domains, we
+stand ready to extend this provision to those domains in future versions
+of the GPL, as needed to protect the freedom of users.
+
+  Finally, every program is threatened constantly by software patents.
+States should not allow patents to restrict development and use of
+software on general-purpose computers, but in those that do, we wish to
+avoid the special danger that patents applied to a free program could
+make it effectively proprietary.  To prevent this, the GPL assures that
+patents cannot be used to render the program non-free.
+
+  The precise terms and conditions for copying, distribution and
+modification follow.
+
+                       TERMS AND CONDITIONS
+
+  0. Definitions.
+
+  "This License" refers to version 3 of the GNU General Public License.
+
+  "Copyright" also means copyright-like laws that apply to other kinds of
+works, such as semiconductor masks.
+
+  "The Program" refers to any copyrightable work licensed under this
+License.  Each licensee is addressed as "you".  "Licensees" and
+"recipients" may be individuals or organizations.
+
+  To "modify" a work means to copy from or adapt all or part of the work
+in a fashion requiring copyright permission, other than the making of an
+exact copy.  The resulting work is called a "modified version" of the
+earlier work or a work "based on" the earlier work.
+
+  A "covered work" means either the unmodified Program or a work based
+on the Program.
+
+  To "propagate" a work means to do anything with it that, without
+permission, would make you directly or secondarily liable for
+infringement under applicable copyright law, except executing it on a
+computer or modifying a private copy.  Propagation includes copying,
+distribution (with or without modification), making available to the
+public, and in some countries other activities as well.
+
+  To "convey" a work means any kind of propagation that enables other
+parties to make or receive copies.  Mere interaction with a user through
+a computer network, with no transfer of a copy, is not conveying.
+
+  An interactive user interface displays "Appropriate Legal Notices"
+to the extent that it includes a convenient and prominently visible
+feature that (1) displays an appropriate copyright notice, and (2)
+tells the user that there is no warranty for the work (except to the
+extent that warranties are provided), that licensees may convey the
+work under this License, and how to view a copy of this License.  If
+the interface presents a list of user commands or options, such as a
+menu, a prominent item in the list meets this criterion.
+
+  1. Source Code.
+
+  The "source code" for a work means the preferred form of the work
+for making modifications to it.  "Object code" means any non-source
+form of a work.
+
+  A "Standard Interface" means an interface that either is an official
+standard defined by a recognized standards body, or, in the case of
+interfaces specified for a particular programming language, one that
+is widely used among developers working in that language.
+
+  The "System Libraries" of an executable work include anything, other
+than the work as a whole, that (a) is included in the normal form of
+packaging a Major Component, but which is not part of that Major
+Component, and (b) serves only to enable use of the work with that
+Major Component, or to implement a Standard Interface for which an
+implementation is available to the public in source code form.  A
+"Major Component", in this context, means a major essential component
+(kernel, window system, and so on) of the specific operating system
+(if any) on which the executable work runs, or a compiler used to
+produce the work, or an object code interpreter used to run it.
+
+  The "Corresponding Source" for a work in object code form means all
+the source code needed to generate, install, and (for an executable
+work) run the object code and to modify the work, including scripts to
+control those activities.  However, it does not include the work's
+System Libraries, or general-purpose tools or generally available free
+programs which are used unmodified in performing those activities but
+which are not part of the work.  For example, Corresponding Source
+includes interface definition files associated with source files for
+the work, and the source code for shared libraries and dynamically
+linked subprograms that the work is specifically designed to require,
+such as by intimate data communication or control flow between those
+subprograms and other parts of the work.
+
+  The Corresponding Source need not include anything that users
+can regenerate automatically from other parts of the Corresponding
+Source.
+
+  The Corresponding Source for a work in source code form is that
+same work.
+
+  2. Basic Permissions.
+
+  All rights granted under this License are granted for the term of
+copyright on the Program, and are irrevocable provided the stated
+conditions are met.  This License explicitly affirms your unlimited
+permission to run the unmodified Program.  The output from running a
+covered work is covered by this License only if the output, given its
+content, constitutes a covered work.  This License acknowledges your
+rights of fair use or other equivalent, as provided by copyright law.
+
+  You may make, run and propagate covered works that you do not
+convey, without conditions so long as your license otherwise remains
+in force.  You may convey covered works to others for the sole purpose
+of having them make modifications exclusively for you, or provide you
+with facilities for running those works, provided that you comply with
+the terms of this License in conveying all material for which you do
+not control copyright.  Those thus making or running the covered works
+for you must do so exclusively on your behalf, under your direction
+and control, on terms that prohibit them from making any copies of
+your copyrighted material outside their relationship with you.
+
+  Conveying under any other circumstances is permitted solely under
+the conditions stated below.  Sublicensing is not allowed; section 10
+makes it unnecessary.
+
+  3. Protecting Users' Legal Rights From Anti-Circumvention Law.
+
+  No covered work shall be deemed part of an effective technological
+measure under any applicable law fulfilling obligations under article
+11 of the WIPO copyright treaty adopted on 20 December 1996, or
+similar laws prohibiting or restricting circumvention of such
+measures.
+
+  When you convey a covered work, you waive any legal power to forbid
+circumvention of technological measures to the extent such circumvention
+is effected by exercising rights under this License with respect to
+the covered work, and you disclaim any intention to limit operation or
+modification of the work as a means of enforcing, against the work's
+users, your or third parties' legal rights to forbid circumvention of
+technological measures.
+
+  4. Conveying Verbatim Copies.
+
+  You may convey verbatim copies of the Program's source code as you
+receive it, in any medium, provided that you conspicuously and
+appropriately publish on each copy an appropriate copyright notice;
+keep intact all notices stating that this License and any
+non-permissive terms added in accord with section 7 apply to the code;
+keep intact all notices of the absence of any warranty; and give all
+recipients a copy of this License along with the Program.
+
+  You may charge any price or no price for each copy that you convey,
+and you may offer support or warranty protection for a fee.
+
+  5. Conveying Modified Source Versions.
+
+  You may convey a work based on the Program, or the modifications to
+produce it from the Program, in the form of source code under the
+terms of section 4, provided that you also meet all of these conditions:
+
+    a) The work must carry prominent notices stating that you modified
+    it, and giving a relevant date.
+
+    b) The work must carry prominent notices stating that it is
+    released under this License and any conditions added under section
+    7.  This requirement modifies the requirement in section 4 to
+    "keep intact all notices".
+
+    c) You must license the entire work, as a whole, under this
+    License to anyone who comes into possession of a copy.  This
+    License will therefore apply, along with any applicable section 7
+    additional terms, to the whole of the work, and all its parts,
+    regardless of how they are packaged.  This License gives no
+    permission to license the work in any other way, but it does not
+    invalidate such permission if you have separately received it.
+
+    d) If the work has interactive user interfaces, each must display
+    Appropriate Legal Notices; however, if the Program has interactive
+    interfaces that do not display Appropriate Legal Notices, your
+    work need not make them do so.
+
+  A compilation of a covered work with other separate and independent
+works, which are not by their nature extensions of the covered work,
+and which are not combined with it such as to form a larger program,
+in or on a volume of a storage or distribution medium, is called an
+"aggregate" if the compilation and its resulting copyright are not
+used to limit the access or legal rights of the compilation's users
+beyond what the individual works permit.  Inclusion of a covered work
+in an aggregate does not cause this License to apply to the other
+parts of the aggregate.
+
+  6. Conveying Non-Source Forms.
+
+  You may convey a covered work in object code form under the terms
+of sections 4 and 5, provided that you also convey the
+machine-readable Corresponding Source under the terms of this License,
+in one of these ways:
+
+    a) Convey the object code in, or embodied in, a physical product
+    (including a physical distribution medium), accompanied by the
+    Corresponding Source fixed on a durable physical medium
+    customarily used for software interchange.
+
+    b) Convey the object code in, or embodied in, a physical product
+    (including a physical distribution medium), accompanied by a
+    written offer, valid for at least three years and valid for as
+    long as you offer spare parts or customer support for that product
+    model, to give anyone who possesses the object code either (1) a
+    copy of the Corresponding Source for all the software in the
+    product that is covered by this License, on a durable physical
+    medium customarily used for software interchange, for a price no
+    more than your reasonable cost of physically performing this
+    conveying of source, or (2) access to copy the
+    Corresponding Source from a network server at no charge.
+
+    c) Convey individual copies of the object code with a copy of the
+    written offer to provide the Corresponding Source.  This
+    alternative is allowed only occasionally and noncommercially, and
+    only if you received the object code with such an offer, in accord
+    with subsection 6b.
+
+    d) Convey the object code by offering access from a designated
+    place (gratis or for a charge), and offer equivalent access to the
+    Corresponding Source in the same way through the same place at no
+    further charge.  You need not require recipients to copy the
+    Corresponding Source along with the object code.  If the place to
+    copy the object code is a network server, the Corresponding Source
+    may be on a different server (operated by you or a third party)
+    that supports equivalent copying facilities, provided you maintain
+    clear directions next to the object code saying where to find the
+    Corresponding Source.  Regardless of what server hosts the
+    Corresponding Source, you remain obligated to ensure that it is
+    available for as long as needed to satisfy these requirements.
+
+    e) Convey the object code using peer-to-peer transmission, provided
+    you inform other peers where the object code and Corresponding
+    Source of the work are being offered to the general public at no
+    charge under subsection 6d.
+
+  A separable portion of the object code, whose source code is excluded
+from the Corresponding Source as a System Library, need not be
+included in conveying the object code work.
+
+  A "User Product" is either (1) a "consumer product", which means any
+tangible personal property which is normally used for personal, family,
+or household purposes, or (2) anything designed or sold for incorporation
+into a dwelling.  In determining whether a product is a consumer product,
+doubtful cases shall be resolved in favor of coverage.  For a particular
+product received by a particular user, "normally used" refers to a
+typical or common use of that class of product, regardless of the status
+of the particular user or of the way in which the particular user
+actually uses, or expects or is expected to use, the product.  A product
+is a consumer product regardless of whether the product has substantial
+commercial, industrial or non-consumer uses, unless such uses represent
+the only significant mode of use of the product.
+
+  "Installation Information" for a User Product means any methods,
+procedures, authorization keys, or other information required to install
+and execute modified versions of a covered work in that User Product from
+a modified version of its Corresponding Source.  The information must
+suffice to ensure that the continued functioning of the modified object
+code is in no case prevented or interfered with solely because
+modification has been made.
+
+  If you convey an object code work under this section in, or with, or
+specifically for use in, a User Product, and the conveying occurs as
+part of a transaction in which the right of possession and use of the
+User Product is transferred to the recipient in perpetuity or for a
+fixed term (regardless of how the transaction is characterized), the
+Corresponding Source conveyed under this section must be accompanied
+by the Installation Information.  But this requirement does not apply
+if neither you nor any third party retains the ability to install
+modified object code on the User Product (for example, the work has
+been installed in ROM).
+
+  The requirement to provide Installation Information does not include a
+requirement to continue to provide support service, warranty, or updates
+for a work that has been modified or installed by the recipient, or for
+the User Product in which it has been modified or installed.  Access to a
+network may be denied when the modification itself materially and
+adversely affects the operation of the network or violates the rules and
+protocols for communication across the network.
+
+  Corresponding Source conveyed, and Installation Information provided,
+in accord with this section must be in a format that is publicly
+documented (and with an implementation available to the public in
+source code form), and must require no special password or key for
+unpacking, reading or copying.
+
+  7. Additional Terms.
+
+  "Additional permissions" are terms that supplement the terms of this
+License by making exceptions from one or more of its conditions.
+Additional permissions that are applicable to the entire Program shall
+be treated as though they were included in this License, to the extent
+that they are valid under applicable law.  If additional permissions
+apply only to part of the Program, that part may be used separately
+under those permissions, but the entire Program remains governed by
+this License without regard to the additional permissions.
+
+  When you convey a copy of a covered work, you may at your option
+remove any additional permissions from that copy, or from any part of
+it.  (Additional permissions may be written to require their own
+removal in certain cases when you modify the work.)  You may place
+additional permissions on material, added by you to a covered work,
+for which you have or can give appropriate copyright permission.
+
+  Notwithstanding any other provision of this License, for material you
+add to a covered work, you may (if authorized by the copyright holders of
+that material) supplement the terms of this License with terms:
+
+    a) Disclaiming warranty or limiting liability differently from the
+    terms of sections 15 and 16 of this License; or
+
+    b) Requiring preservation of specified reasonable legal notices or
+    author attributions in that material or in the Appropriate Legal
+    Notices displayed by works containing it; or
+
+    c) Prohibiting misrepresentation of the origin of that material, or
+    requiring that modified versions of such material be marked in
+    reasonable ways as different from the original version; or
+
+    d) Limiting the use for publicity purposes of names of licensors or
+    authors of the material; or
+
+    e) Declining to grant rights under trademark law for use of some
+    trade names, trademarks, or service marks; or
+
+    f) Requiring indemnification of licensors and authors of that
+    material by anyone who conveys the material (or modified versions of
+    it) with contractual assumptions of liability to the recipient, for
+    any liability that these contractual assumptions directly impose on
+    those licensors and authors.
+
+  All other non-permissive additional terms are considered "further
+restrictions" within the meaning of section 10.  If the Program as you
+received it, or any part of it, contains a notice stating that it is
+governed by this License along with a term that is a further
+restriction, you may remove that term.  If a license document contains
+a further restriction but permits relicensing or conveying under this
+License, you may add to a covered work material governed by the terms
+of that license document, provided that the further restriction does
+not survive such relicensing or conveying.
+
+  If you add terms to a covered work in accord with this section, you
+must place, in the relevant source files, a statement of the
+additional terms that apply to those files, or a notice indicating
+where to find the applicable terms.
+
+  Additional terms, permissive or non-permissive, may be stated in the
+form of a separately written license, or stated as exceptions;
+the above requirements apply either way.
+
+  8. Termination.
+
+  You may not propagate or modify a covered work except as expressly
+provided under this License.  Any attempt otherwise to propagate or
+modify it is void, and will automatically terminate your rights under
+this License (including any patent licenses granted under the third
+paragraph of section 11).
+
+  However, if you cease all violation of this License, then your
+license from a particular copyright holder is reinstated (a)
+provisionally, unless and until the copyright holder explicitly and
+finally terminates your license, and (b) permanently, if the copyright
+holder fails to notify you of the violation by some reasonable means
+prior to 60 days after the cessation.
+
+  Moreover, your license from a particular copyright holder is
+reinstated permanently if the copyright holder notifies you of the
+violation by some reasonable means, this is the first time you have
+received notice of violation of this License (for any work) from that
+copyright holder, and you cure the violation prior to 30 days after
+your receipt of the notice.
+
+  Termination of your rights under this section does not terminate the
+licenses of parties who have received copies or rights from you under
+this License.  If your rights have been terminated and not permanently
+reinstated, you do not qualify to receive new licenses for the same
+material under section 10.
+
+  9. Acceptance Not Required for Having Copies.
+
+  You are not required to accept this License in order to receive or
+run a copy of the Program.  Ancillary propagation of a covered work
+occurring solely as a consequence of using peer-to-peer transmission
+to receive a copy likewise does not require acceptance.  However,
+nothing other than this License grants you permission to propagate or
+modify any covered work.  These actions infringe copyright if you do
+not accept this License.  Therefore, by modifying or propagating a
+covered work, you indicate your acceptance of this License to do so.
+
+  10. Automatic Licensing of Downstream Recipients.
+
+  Each time you convey a covered work, the recipient automatically
+receives a license from the original licensors, to run, modify and
+propagate that work, subject to this License.  You are not responsible
+for enforcing compliance by third parties with this License.
+
+  An "entity transaction" is a transaction transferring control of an
+organization, or substantially all assets of one, or subdividing an
+organization, or merging organizations.  If propagation of a covered
+work results from an entity transaction, each party to that
+transaction who receives a copy of the work also receives whatever
+licenses to the work the party's predecessor in interest had or could
+give under the previous paragraph, plus a right to possession of the
+Corresponding Source of the work from the predecessor in interest, if
+the predecessor has it or can get it with reasonable efforts.
+
+  You may not impose any further restrictions on the exercise of the
+rights granted or affirmed under this License.  For example, you may
+not impose a license fee, royalty, or other charge for exercise of
+rights granted under this License, and you may not initiate litigation
+(including a cross-claim or counterclaim in a lawsuit) alleging that
+any patent claim is infringed by making, using, selling, offering for
+sale, or importing the Program or any portion of it.
+
+  11. Patents.
+
+  A "contributor" is a copyright holder who authorizes use under this
+License of the Program or a work on which the Program is based.  The
+work thus licensed is called the contributor's "contributor version".
+
+  A contributor's "essential patent claims" are all patent claims
+owned or controlled by the contributor, whether already acquired or
+hereafter acquired, that would be infringed by some manner, permitted
+by this License, of making, using, or selling its contributor version,
+but do not include claims that would be infringed only as a
+consequence of further modification of the contributor version.  For
+purposes of this definition, "control" includes the right to grant
+patent sublicenses in a manner consistent with the requirements of
+this License.
+
+  Each contributor grants you a non-exclusive, worldwide, royalty-free
+patent license under the contributor's essential patent claims, to
+make, use, sell, offer for sale, import and otherwise run, modify and
+propagate the contents of its contributor version.
+
+  In the following three paragraphs, a "patent license" is any express
+agreement or commitment, however denominated, not to enforce a patent
+(such as an express permission to practice a patent or covenant not to
+sue for patent infringement).  To "grant" such a patent license to a
+party means to make such an agreement or commitment not to enforce a
+patent against the party.
+
+  If you convey a covered work, knowingly relying on a patent license,
+and the Corresponding Source of the work is not available for anyone
+to copy, free of charge and under the terms of this License, through a
+publicly available network server or other readily accessible means,
+then you must either (1) cause the Corresponding Source to be so
+available, or (2) arrange to deprive yourself of the benefit of the
+patent license for this particular work, or (3) arrange, in a manner
+consistent with the requirements of this License, to extend the patent
+license to downstream recipients.  "Knowingly relying" means you have
+actual knowledge that, but for the patent license, your conveying the
+covered work in a country, or your recipient's use of the covered work
+in a country, would infringe one or more identifiable patents in that
+country that you have reason to believe are valid.
+
+  If, pursuant to or in connection with a single transaction or
+arrangement, you convey, or propagate by procuring conveyance of, a
+covered work, and grant a patent license to some of the parties
+receiving the covered work authorizing them to use, propagate, modify
+or convey a specific copy of the covered work, then the patent license
+you grant is automatically extended to all recipients of the covered
+work and works based on it.
+
+  A patent license is "discriminatory" if it does not include within
+the scope of its coverage, prohibits the exercise of, or is
+conditioned on the non-exercise of one or more of the rights that are
+specifically granted under this License.  You may not convey a covered
+work if you are a party to an arrangement with a third party that is
+in the business of distributing software, under which you make payment
+to the third party based on the extent of your activity of conveying
+the work, and under which the third party grants, to any of the
+parties who would receive the covered work from you, a discriminatory
+patent license (a) in connection with copies of the covered work
+conveyed by you (or copies made from those copies), or (b) primarily
+for and in connection with specific products or compilations that
+contain the covered work, unless you entered into that arrangement,
+or that patent license was granted, prior to 28 March 2007.
+
+  Nothing in this License shall be construed as excluding or limiting
+any implied license or other defenses to infringement that may
+otherwise be available to you under applicable patent law.
+
+  12. No Surrender of Others' Freedom.
+
+  If conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot convey a
+covered work so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you may
+not convey it at all.  For example, if you agree to terms that obligate you
+to collect a royalty for further conveying from those to whom you convey
+the Program, the only way you could satisfy both those terms and this
+License would be to refrain entirely from conveying the Program.
+
+  13. Use with the GNU Affero General Public License.
+
+  Notwithstanding any other provision of this License, you have
+permission to link or combine any covered work with a work licensed
+under version 3 of the GNU Affero General Public License into a single
+combined work, and to convey the resulting work.  The terms of this
+License will continue to apply to the part which is the covered work,
+but the special requirements of the GNU Affero General Public License,
+section 13, concerning interaction through a network will apply to the
+combination as such.
+
+  14. Revised Versions of this License.
+
+  The Free Software Foundation may publish revised and/or new versions of
+the GNU General Public License from time to time.  Such new versions will
+be similar in spirit to the present version, but may differ in detail to
+address new problems or concerns.
+
+  Each version is given a distinguishing version number.  If the
+Program specifies that a certain numbered version of the GNU General
+Public License "or any later version" applies to it, you have the
+option of following the terms and conditions either of that numbered
+version or of any later version published by the Free Software
+Foundation.  If the Program does not specify a version number of the
+GNU General Public License, you may choose any version ever published
+by the Free Software Foundation.
+
+  If the Program specifies that a proxy can decide which future
+versions of the GNU General Public License can be used, that proxy's
+public statement of acceptance of a version permanently authorizes you
+to choose that version for the Program.
+
+  Later license versions may give you additional or different
+permissions.  However, no additional obligations are imposed on any
+author or copyright holder as a result of your choosing to follow a
+later version.
+
+  15. Disclaimer of Warranty.
+
+  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
+APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY
+OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF
+ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+  16. Limitation of Liability.
+
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
+THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+  17. Interpretation of Sections 15 and 16.
+
+  If the disclaimer of warranty and limitation of liability provided
+above cannot be given local legal effect according to their terms,
+reviewing courts shall apply local law that most closely approximates
+an absolute waiver of all civil liability in connection with the
+Program, unless a warranty or assumption of liability accompanies a
+copy of the Program in return for a fee.
+
+                     END OF TERMS AND CONDITIONS
+
+            How to Apply These Terms to Your New Programs
+
+  If you develop a new program, and you want it to be of the greatest
+possible use to the public, the best way to achieve this is to make it
+free software which everyone can redistribute and change under these terms.
+
+  To do so, attach the following notices to the program.  It is safest
+to attach them to the start of each source file to most effectively
+state the exclusion of warranty; and each file should have at least
+the "copyright" line and a pointer to where the full notice is found.
+
+    <one line to give the program's name and a brief idea of what it does.>
+    Copyright (C) <year>  <name of author>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+Also add information on how to contact you by electronic and paper mail.
+
+  If the program does terminal interaction, make it output a short
+notice like this when it starts in an interactive mode:
+
+    <program>  Copyright (C) 2019  Egor Moiseew Faized
+    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details.
+
+The hypothetical commands `show w' and `show c' should show the appropriate
+parts of the General Public License.  Of course, your program's commands
+might be different; for a GUI interface, you would use an "about box".
+
+  You should also get your employer (if you work as a programmer) or school,
+if any, to sign a "copyright disclaimer" for the program, if necessary.
+For more information on this, and how to apply and follow the GNU GPL, see
+<https://www.gnu.org/licenses/>.
+
+  The GNU General Public License does not permit incorporating your program
+into proprietary programs.  If your program is a subroutine library, you
+may consider it more useful to permit linking proprietary applications with
+the library.  If this is what you want to do, use the GNU Lesser General
+Public License instead of this License.  But first, please read
+<https://www.gnu.org/licenses/why-not-lgpl.html>.
